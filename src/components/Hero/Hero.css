@@ -1,0 +1,48 @@
+.hero {
+  min-height: 100vh;
+}
+
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 100px 20px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #6ee7a8;
+  border: 1px solid #6ee7a8;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.hero-badge::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #6ee7a8;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 #6ee7a899;
+  }
+  70% {
+    box-shadow: 0 0 0 10px #6ee7a800;
+  }
+  100% {
+    box-shadow: 0 0 #6ee7a800;
+  }
+}
+
+/* .highlight {
+}
+
+.terminal {
+} */
