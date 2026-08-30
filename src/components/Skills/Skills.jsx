@@ -4,9 +4,9 @@ function Skills() {
     return (
         <section className="skills" id="skills">
             <div className="skills-content">
-                <h2>Technical Skills</h2>
-                <div className="skills-list">
-                    <div className="skill">Frontend
+                <span className="skills-badge">SKILLS</span>                <div className="skills-list">
+                    <div className="skill">
+                        <h3>Frontend</h3>
                         <ul className="skill-sublist">
                             <li>React</li>
                             <li>React Native</li>
@@ -17,7 +17,8 @@ function Skills() {
                             <li>Vite</li>
                         </ul>
                     </div>
-                    <div className="skill">Backend & Databases
+                    <div className="skill">
+                        <h3>Backend & Databases</h3>
                         <ul className="skill-sublist">
                             <li>Node.js</li>
                             <li>Express.js</li>
@@ -28,7 +29,8 @@ function Skills() {
                             <li>MongoDB Atlas</li>
                         </ul>
                     </div>
-                    <div className="skill">Tools & Platforms
+                    <div className="skill">
+                        <h3>Tools & Platforms</h3>
                         <ul className="skill-sublist">
                             <li>Git</li>
                             <li>GitHub</li>
@@ -39,7 +41,8 @@ function Skills() {
                             <li>pnpm</li>
                         </ul>
                     </div>
-                    <div className="skill">Practices
+                    <div className="skill">
+                        <h3>Practices</h3>
                         <ul className="skill-sublist">
                             <li>Full-Stack Development</li>
                             <li>API Integration</li>
