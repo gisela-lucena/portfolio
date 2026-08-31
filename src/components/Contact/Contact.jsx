@@ -7,14 +7,15 @@ function Contact() {
                 <span className="contact-badge">CONTACT</span>
                 <h2>Let's build something solid together.</h2>
                 <p>Open to full-stack, frontend, or backend roles. The fastest way to reach me is through the links below.</p>
-                <div className="contact-list"> Let's talk
+                <div className="contact-list">
+                    <h3>Let's talk</h3>
                     <div>
                         <a href="https://www.linkedin.com/in/gisela-elia" target="_blank" rel="noopener noreferrer">
                             LinkedIn
                         </a>
                     </div>
                     <div>
-                        <a href="mailto:your-email@example.com">
+                        <a href="mailto:lucena.gisela@gmail.com">
                             Email
                         </a>
                     </div>
