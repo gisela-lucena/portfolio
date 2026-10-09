@@ -8,12 +8,30 @@ html {
 
 body {
   margin: 0;
+  min-width: 320px;
   font-family: Arial, sans-serif;
   background-color: #07120e;
   color: #f1f5f2;
 }
 
-body a {
-  text-decoration: none;
+a {
   color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
