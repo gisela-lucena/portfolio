@@ -4,7 +4,7 @@ function Certifications() {
     return (
         <section className="certifications" id="certifications">
             <div className="certifications-content">
-                <span className="certifications-badge">CERTIFICATIONS</span>
+                <span className="section-label">CERTIFICATIONS</span>
                 <h2>Continued learning.</h2>
                 <div className="certifications-list">
                     <article className="certification-item">

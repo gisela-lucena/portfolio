@@ -4,7 +4,7 @@ function Contact() {
     return (
         <section className="contact" id="contact">
             <div className="contact-content">
-                <span className="contact-badge">CONTACT</span>
+                <span className="section-label">CONTACT</span>
                 <h2>Let's build something solid together.</h2>
                 <p>Open to full-stack, frontend, or backend roles. The fastest way to reach me is through the links below.</p>
                 <div className="contact-list">
