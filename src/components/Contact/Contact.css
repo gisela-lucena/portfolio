@@ -1,0 +1,11 @@
+.contact {
+  padding: 80px 28px;;
+}
+
+.contact-card {
+  margin-top: 40px;
+  padding: 40px;
+  background-color: #0c1913;
+  border: 1px solid #233229;
+  border-radius: 12px;
+}

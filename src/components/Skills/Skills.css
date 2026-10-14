@@ -1,5 +1,5 @@
 .skills {
-  padding: 100px 0;
+  padding: 80px 28px;
 }
 
 .skills-grid {
@@ -10,7 +10,7 @@
 }
 
 .skills h2 {
-  font-size: 38px;
+  font-size: 28px;
 }
 
 .skill-card {

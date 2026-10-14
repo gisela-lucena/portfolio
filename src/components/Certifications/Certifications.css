@@ -1,0 +1,27 @@
+.certifications {
+  padding: 80px 28px;;
+}
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.certifications h2 {
+  font-size: 28px;
+}
+
+.certification-card {
+  background-color: #0c1913;
+  border: 1px solid #233229;
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.certification-card h3 {
+  font-size: 16px;
+  margin: 0 0 20px;
+  color: #f1f5f2;
+}
