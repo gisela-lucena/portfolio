@@ -40,9 +40,13 @@
     box-shadow: 0 0 #6ee7a800;
   }
 }
-
-/* .highlight {
+@media (prefers-reduced-motion: reduce) {
+  .hero-badge::before {
+    animation: none;
+  }
 }
-
-.terminal {
-} */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
