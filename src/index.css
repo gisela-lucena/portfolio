@@ -43,3 +43,40 @@ textarea {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
+.btn {
+  display: inline-flex;
+  padding: 12px 20px;
+  background-color: #6ee7a8;
+  color: #07120e;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border: 1px solid #6ee7a8;
+}
+
+.btn:hover {
+  background-color: #a3f0c4;
+}
+
+.btn:focus-visible {
+  outline: 2px solid #f1f5f2;
+  outline-offset: 4px;
+}
+
+.hero-buttons,
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

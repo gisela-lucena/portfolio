@@ -1,4 +1,6 @@
 import "./Hero.css";
+import { useState, useEffect } from "react";
+
 
 function Hero() {
     return (
@@ -25,6 +27,9 @@ function Hero() {
                     </div>
                     <div className="terminal-command">
                         <span className="command-text">~/gisela $</span>
+                        <span className="terminal-typing">
+                            npm run build-something
+                        </span>
                     </div>
                 </div>
             </div>
