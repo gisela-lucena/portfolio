@@ -11,6 +11,12 @@ function App() {
 
   return (
     <>
+      <div className="floating-code" aria-hidden="true">
+        <span>{"const build = () => ship();"}</span>
+        <span>{"<Component />"}</span>
+        <span>{"app.get('/api', handler)"}</span>
+        <span>{"db.collection('users')"}</span>
+      </div>
       <Navbar />
       <Hero />
       <About />

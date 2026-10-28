@@ -9,9 +9,41 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  font-family: Arial, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
   background-color: #07120e;
   color: #f1f5f2;
+  isolation: isolate;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+body::before {
+  z-index: -2;
+  background-image:
+    linear-gradient(#6ee7a808 1px, transparent 1px),
+    linear-gradient(90deg, #6ee7a808 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+body::after {
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 15% 15%, #6ee7a822, transparent 45%),
+    radial-gradient(ellipse at 85% 80%, #d9775718, transparent 40%);
+  animation: background-drift 16s ease-in-out infinite alternate;
 }
 
 a {
@@ -75,8 +107,105 @@ textarea {
   margin-top: 24px;
 }
 
+.btn-outline {
+  background-color: transparent;
+  border-color: #233229;
+  color: #f1f5f2;
+}
+
+.btn-outline:hover {
+  background-color: #17251d;
+}
+
+.about h2,
+.skills h2,
+.projects h2,
+.certifications h2,
+.contact h2 {
+  margin: 16px 0 24px;
+  font-size: clamp(28px, 4vw, 38px);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.project-card p,
+.certification-card p {
+  color: #9aa6a0;
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+.floating-code {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.floating-code span {
+  position: absolute;
+  color: #6ee7a8;
+  opacity: 0.12;
+  font-family: monospace;
+  font-size: 12px;
+  animation: code-float 12s ease-in-out infinite alternate;
+}
+
+.floating-code span:nth-child(1) {
+  top: 17%;
+  left: 6%;
+}
+
+.floating-code span:nth-child(2) {
+  top: 27%;
+  right: 12%;
+  animation-delay: -3s;
+}
+
+.floating-code span:nth-child(3) {
+  top: 58%;
+  right: 5%;
+  animation-delay: -6s;
+}
+
+.floating-code span:nth-child(4) {
+  bottom: 15%;
+  left: 12%;
+  animation-delay: -9s;
+}
+
+@keyframes code-float {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-24px);
+  }
+}
+
+
+@keyframes background-drift {
+  from {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+
+  to {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+  body::after {
+    animation: none;
+  }
+  .floating-code span {
+    animation: none;
   }
 }

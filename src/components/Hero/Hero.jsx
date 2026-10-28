@@ -1,6 +1,4 @@
 import "./Hero.css";
-import { useState, useEffect } from "react";
-
 
 function Hero() {
     return (
