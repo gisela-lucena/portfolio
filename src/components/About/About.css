@@ -1,3 +1,15 @@
 .about {
   padding: 80px 28px;
 }
+
+.about h2 {
+  max-width: 24ch;
+}
+
+.about p {
+  max-width: 680px;
+  color: #9aa6a0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+}

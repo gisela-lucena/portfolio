@@ -31,7 +31,7 @@ function Projects() {
                         </a>
                     </article>
                     <article className="project-card">
-                        <a href="https://github.com/filmera/rest-api" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/gisela-lucena/filmera-backend" target="_blank" rel="noreferrer">
                             <h3>REST API Service</h3>
                             <p>Secure JWT-authenticated REST API with MVC architecture and cloud deployment on Render.</p>
                             <ul className="project-tech-list">

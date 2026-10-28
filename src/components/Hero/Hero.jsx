@@ -15,7 +15,9 @@ function Hero() {
                 <div className="hero-buttons">
                     <a href="#contact" className="btn">Get in touch</a>
                     <a href="https://github.com/gisela-lucena" target="_blank"
-                        rel="noreferrer" className="btn">View GitHub →</a>
+                        rel="noreferrer" className="btn btn-outline">
+                        View GitHub →
+                    </a>
                 </div>
                 <div className="terminal">
                     <div className="terminal-lights">

@@ -2,6 +2,10 @@
   padding: 80px 28px;
 }
 
+.contact h2 {
+  max-width: 550px;
+}
+
 .contact-content > p {
   max-width: 750px;
   color: #9aa6a0;
