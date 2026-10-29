@@ -1,0 +1,27 @@
+.project-detail {
+  padding: 80px 28px;
+}
+
+.project-detail .section-label {
+  margin-top: 40px;
+}
+
+.project-detail h1 {
+  margin: 16px 0;
+  font-size: clamp(40px, 7vw, 72px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.project-detail p:not(.section-label) {
+  max-width: 680px;
+  color: #9aa6a0;
+}
+
+.project-detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+}

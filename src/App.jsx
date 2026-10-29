@@ -1,11 +1,9 @@
+import { Route, Routes } from 'react-router-dom'
+import Filmera from './pages/Filmera/Filmera'
+import Home from './pages/Home/home'
 import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import About from './components/About/About'
-import Skills from './components/Skills/Skills'
-import Projects from './components/Projects/Projects'
-import Certifications from './components/Certifications/Certifications'
-import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import ScrollToSection from './components/ScrollToSection/ScrollToSection'
 
 function App() {
 
@@ -17,13 +15,15 @@ function App() {
         <span>{"app.get('/api', handler)"}</span>
         <span>{"db.collection('users')"}</span>
       </div>
+      <ScrollToSection />
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Certifications />
-      <Contact />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects/filmera" element={<Filmera />} />
+          <Route path="*" element={<div className="section-container"><h1>Page Not Found</h1><a href="/">Back to Home</a></div>} />
+        </Routes>
+      </main>
       <Footer />
     </>
   );
