@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import Filmera from './pages/Filmera/Filmera'
-import Home from './pages/Home/home'
+import Home from './pages/Home/Home'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import ScrollToSection from './components/ScrollToSection/ScrollToSection'
